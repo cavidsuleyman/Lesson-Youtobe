@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+}
+
+.container-video {
+    flex: 4;
+    /* background: aqua; */
+    height: calc(100vh - 70px);
+}

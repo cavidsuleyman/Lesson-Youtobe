@@ -1,0 +1,33 @@
+.category-main{
+    width: 100vw;
+    max-width: 1400px;
+    background: white;
+    position: sticky;
+    z-index: 9999;
+     top: 0;
+  }
+  
+  .categories{
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+  .categories::-webkit-scrollbar{
+    width: 0px;
+  }
+  
+  .category-main button{
+    border: none;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    margin-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .category-main button:hover{
+      background: #D9D9D9;
+  }
