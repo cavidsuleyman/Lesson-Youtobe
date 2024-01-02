@@ -9,6 +9,141 @@ import { GiTrophyCup } from "react-icons/gi";
 import { SiYoutubestudio, SiYoutubemusic } from "react-icons/si";
 import { Link } from "react-router-dom";
 
+import poster_photo_1 from '../assets/image/poster-1.jpg'
+import poster_photo_2 from '../assets/image/poster-2.jpg'
+import poster_photo_3 from '../assets/image/poster-3.jpg'
+import poster_photo_4 from '../assets/image/poster-4.jpg'
+
+import video_1 from '../assets/video/fenerbahce-video-1.mp4'
+import video_2 from '../assets/video/fenerbahce-video-2.mp4'
+import video_3 from '../assets/video/cukur-video-1.mp4'
+import video_4 from '../assets/video/cukur-video-2.mp4'
+import video_5 from '../assets/video/devlet-video.mp4'
+
+
+const videoData = [
+    {
+        id: 1,
+        status: true,
+        video: video_1,
+        poster: poster_photo_1,
+        video_name: "Fenerbahce haberleri",
+        viewers: 100,
+        time: "2 hours ago",
+        category: "FENERBAHCE"
+    },
+    {
+        id: 2,
+        status: true,
+        video: video_2,
+        poster: poster_photo_2,
+        video_name: "Fenerbahce gundemi",
+        viewers: 125,
+        time: "2 hours ago",
+        category: "FENERBAHCE"
+    },
+    {
+        id: 3,
+        status: true,
+        video: video_3,
+        poster: poster_photo_3,
+        video_name: "Cukur 4 Bolum",
+        viewers: 56,
+        time: "2 hours ago",
+        category: "CUKUR"
+    },
+    {
+        id: 4,
+        status: true,
+        video: video_4,
+        poster: poster_photo_4,
+        video_name: "Cukur Yangin Yeri",
+        viewers: 113,
+        time: "2 hours ago",
+        category: "CUKUR"
+    },
+    {
+        id: 5,
+        status: true,
+        video: video_5,
+        poster: poster_photo_4,
+        video_name: "Cukur Yangin Yeri",
+        viewers: 113,
+        time: "2 hours ago",
+        category: "TBMM"
+    },
+    {
+        id: 6,
+        status: true,
+        video: video_1,
+        poster: poster_photo_1,
+        video_name: "Fenerbahce haberleri",
+        viewers: 100,
+        time: "2 hours ago",
+        category: "FENERBAHCE"
+    },
+    {
+        id: 7,
+        status: true,
+        video: video_2,
+        poster: poster_photo_2,
+        video_name: "Fenerbahce gundemi",
+        viewers: 125,
+        time: "2 hours ago",
+        category: "FENERBAHCE"
+    },
+    {
+        id: 8,
+        status: true,
+        video: video_3,
+        poster: poster_photo_3,
+        video_name: "Cukur 4 Bolum",
+        viewers: 56,
+        time: "2 hours ago",
+        category: "CUKUR"
+    },
+    {
+        id: 9,
+        status: true,
+        video: video_4,
+        poster: poster_photo_4,
+        video_name: "Cukur Yangin Yeri",
+        viewers: 113,
+        time: "2 hours ago",
+        category: "CUKUR"
+    },
+    {
+        id: 10,
+        status: true,
+        video: video_5,
+        poster: poster_photo_4,
+        video_name: "Cukur Yangin Yeri",
+        viewers: 113,
+        time: "2 hours ago",
+        category: "TBMM"
+    },
+    {
+        id: 11,
+        status: true,
+        video: video_4,
+        poster: poster_photo_4,
+        video_name: "Cukur Yangin Yeri",
+        viewers: 113,
+        time: "2 hours ago",
+        category: "CUKUR"
+    },
+    {
+        id: 12,
+        status: true,
+        video: video_5,
+        poster: poster_photo_4,
+        video_name: "Cukur Yangin Yeri",
+        viewers: 113,
+        time: "2 hours ago",
+        category: "TBMM"
+    },
+]
+
 
 const linkdata1 = [
     {
@@ -153,4 +288,5 @@ export {
     linkdata4,
     linkdata5,
     linkdata6,
+    videoData
 }

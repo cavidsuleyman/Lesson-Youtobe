@@ -1,17 +1,15 @@
 import React, { useContext } from "react";
 import { FaBars } from "react-icons/fa";
-import { IoSearchOutline, IoNotificationsOutline  } from "react-icons/io5";
+import { IoSearchOutline, IoNotificationsOutline } from "react-icons/io5";
 import { GoDeviceCameraVideo } from "react-icons/go";
-import logo from '../assets/logo.png'
-import '../style/navbar.css'
+import logo from "../assets/image/logo.png";
+import "../style/navbar.css";
 import { MdKeyboardVoice } from "react-icons/md";
 import { VideoContext } from "../context/VideoContext";
-
-
+import { Badge } from "antd";
 
 const Navbar = () => {
-
-  const {handleOpenSidebar} = useContext(VideoContext)
+  const { handleOpenSidebar } = useContext(VideoContext);
 
   return (
     <nav>
@@ -23,24 +21,26 @@ const Navbar = () => {
       </div>
       <div className="nav-center">
         <div className="nav-search">
-            <input type="text" placeholder="Search"/>
-            <button>
-                <IoSearchOutline/>
-            </button>
+          <input type="text" placeholder="Search" />
+          <button>
+            <IoSearchOutline />
+          </button>
         </div>
         <button className="nav-voice-btn">
-            <MdKeyboardVoice/>
+          <MdKeyboardVoice />
         </button>
       </div>
       <div className="nav-right">
         <button>
-            <GoDeviceCameraVideo/>
+          <GoDeviceCameraVideo />
         </button>
         <button>
-            <IoNotificationsOutline />
+          <Badge count={1} size="small">
+            <IoNotificationsOutline size={22}/>
+          </Badge>
         </button>
         <div className="nav-user">
-            <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
         </div>
       </div>
     </nav>
