@@ -174,7 +174,7 @@ const linkdata2 = [
     },
     {
         icon2: <MdOutlineWatchLater fontSize={18}/>,
-        title2: <Link className="link" to="">Watch later</Link>
+        title2: <Link className="link" to="/watchlater">Watch later</Link>
     },
     {
         icon2: <BiLike fontSize={18}/>,

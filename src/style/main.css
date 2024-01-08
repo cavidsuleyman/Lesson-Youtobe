@@ -4,6 +4,15 @@
 
 .container-video {
     flex: 4;
-    /* background: aqua; */
+    overflow-y: auto;
     height: calc(100vh - 70px);
+}
+
+.container-video::-webkit-scrollbar {
+    width: 15px;
+}
+
+.container-video::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
 }
